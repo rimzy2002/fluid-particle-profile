@@ -5,19 +5,57 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import PageTransition from "@/components/PageTransition";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
     message: ""
   });
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Here you would typically send the form data to your backend
+    setIsLoading(true);
+
+    try {
+      await emailjs.send(
+        'service_fdzng2l',
+        'template_fd9q1t8',
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        'fZmaz6qlzNNn19Aku'
+      );
+
+      toast({
+        title: "Message sent!",
+        description: "Thank you for your message. I'll get back to you soon.",
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      toast({
+        title: "Failed to send message",
+        description: "Please try again or contact me directly via email.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -117,10 +155,11 @@ const Contact = () => {
 
                   <Button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-600 hover:to-cyan-600 text-white border-none py-3 text-lg"
+                    disabled={isLoading}
+                    className="w-full bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-600 hover:to-cyan-600 text-white border-none py-3 text-lg disabled:opacity-50"
                   >
                     <Send className="mr-2 h-5 w-5" />
-                    Send Message
+                    {isLoading ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </Card>
