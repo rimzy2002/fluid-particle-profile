@@ -66,7 +66,8 @@ Gaining hands-on experience through academic projects and self-learning. Current
 
               <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700">
                 <h3 className="text-xl font-semibold mb-3 text-yellow-400">Collaboration</h3>
-                <p className="text-gray-300">Happy clients worldwide</p>
+                <p className="text-gray-300">Team Player with Strong Learning Spirit
+Worked on university group projects and participated in peer learning environments. Currently looking forward to contributing to open-source and internship opportunities.</p>
               </div>
             </motion.div>
           </div>
