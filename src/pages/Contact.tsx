@@ -201,7 +201,7 @@ const Contact = () => {
                   scale: 1.1,
                   y: -2
                 }} className="w-12 h-12 bg-gray-800/50 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all duration-300">
-                      {platform.charAt(0)}
+                      {platform === "Instagram" ? "R" : platform.charAt(0)}
                     </motion.a>)}
                 </div>
               </div>
