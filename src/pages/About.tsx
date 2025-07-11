@@ -55,12 +55,13 @@ const About = () => {
           }} className="space-y-6">
               <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700">
                 <h3 className="text-xl font-semibold mb-3 text-purple-400">Experience</h3>
-                <p className="text-gray-300">5+ years in web development</p>
+                <p className="text-gray-300">Aspiring Full-Stack Developer
+Gaining hands-on experience through academic projects and self-learning. Currently exploring React, Node.js, PHP, and MySQL by building real-world mini projects.</p>
               </div>
 
               <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700">
                 <h3 className="text-xl font-semibold mb-3 text-cyan-400">Projects</h3>
-                <p className="text-gray-300">50+ successful projects delivered</p>
+                <p className="text-gray-300">5 successful projects delivered</p>
               </div>
 
               <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700">
