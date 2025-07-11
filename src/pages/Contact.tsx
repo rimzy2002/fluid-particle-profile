@@ -188,7 +188,7 @@ const Contact = () => {
               <div className="pt-8">
                 <h3 className="text-xl font-semibold mb-4 text-white">Follow Me</h3>
                 <div className="flex space-x-4">
-                  {["Github", "Linkedin", "Instagram", "Youtube"].map((platform, index) => <motion.a key={platform} href={platform === "Instagram" ? "https://www.instagram.com/rimzy_ry" : "#"} initial={{
+                  {["R", "I", "M", "Z", "Y"].map((letter, index) => <motion.a key={letter} href={letter === "R" ? "https://www.instagram.com/rimzy_ry" : "#"} initial={{
                   opacity: 0,
                   scale: 0.5
                 }} animate={{
@@ -201,7 +201,7 @@ const Contact = () => {
                   scale: 1.1,
                   y: -2
                 }} className="w-12 h-12 bg-gray-800/50 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all duration-300">
-                      {platform === "Instagram" ? "R" : platform.charAt(0)}
+                      {letter}
                     </motion.a>)}
                 </div>
               </div>
