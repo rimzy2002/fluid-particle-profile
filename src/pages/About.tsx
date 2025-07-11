@@ -65,7 +65,7 @@ Gaining hands-on experience through academic projects and self-learning. Current
               </div>
 
               <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700">
-                <h3 className="text-xl font-semibold mb-3 text-yellow-400">Clients</h3>
+                <h3 className="text-xl font-semibold mb-3 text-yellow-400">Collaboration</h3>
                 <p className="text-gray-300">Happy clients worldwide</p>
               </div>
             </motion.div>
