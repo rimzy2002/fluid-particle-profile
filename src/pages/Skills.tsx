@@ -7,31 +7,29 @@ const Skills = () => {
     {
       title: "Frontend",
       skills: [
-        { name: "React", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Next.js", level: 85 },
-        { name: "Tailwind CSS", level: 90 },
-        { name: "Framer Motion", level: 80 }
+        { name: "HTML5", level: 95 },
+        { name: "CSS3", level: 80 },
+        { name: "JavaScript", level: 70 },
+        { name: "React.js", level: 40 },
+        { name: "Tailwind CSS", level: 40 }
       ]
     },
     {
       title: "Backend",
       skills: [
-        { name: "Node.js", level: 88 },
-        { name: "Express", level: 85 },
-        { name: "Python", level: 80 },
-        { name: "PostgreSQL", level: 85 },
-        { name: "MongoDB", level: 82 }
+        { name: "Java (Swing)", level: 50 },
+        { name: "Node.js", level: 20 }
       ]
     },
     {
       title: "Tools & Others",
       skills: [
-        { name: "Git", level: 92 },
-        { name: "Docker", level: 75 },
-        { name: "AWS", level: 78 },
-        { name: "Three.js", level: 70 },
-        { name: "GraphQL", level: 80 }
+        { name: "Git", level: 70 },
+        { name: "Communication Skills", level: 70 },
+        { name: "Teamwork & Collaboration", level: 70 },
+        { name: "Creativity & UI Thinking", level: 70 },
+        { name: "Time Management", level: 70 },
+        { name: "Debugging, Problem Solving", level: 70 }
       ]
     }
   ];
