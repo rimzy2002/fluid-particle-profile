@@ -29,7 +29,7 @@ const Projects = () => {
       title: "ICU Patient Monitoring System",
       description: "Empowering ICU care with a Java-based system for real-time patient tracking, data management, and intelligent reporting",
       image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=500&h=300&fit=crop",
-      tech: ["Next.js", "Python", "TensorFlow", "D3.js"],
+      tech: ["Java Swing", "MySQL", "JDBC", "OOP"],
       liveUrl: "#",
       githubUrl: "#"
     }
