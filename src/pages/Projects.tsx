@@ -110,6 +110,7 @@ const Projects = () => {
                       size="sm"
                       variant="outline"
                       className="border-gray-600 text-gray-300 hover:bg-gray-700 hover:text-white"
+                      onClick={() => window.open('https://github.com/rimzy2002', '_blank')}
                     >
                       <Github size={16} className="mr-1" />
                       Code
