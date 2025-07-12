@@ -26,7 +26,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "AI Dashboard",
+      title: "ICU Patient Monitoring System",
       description: "Analytics dashboard with AI-powered insights",
       image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=500&h=300&fit=crop",
       tech: ["Next.js", "Python", "TensorFlow", "D3.js"],
