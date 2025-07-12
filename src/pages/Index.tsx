@@ -87,9 +87,13 @@ const Index = () => {
                   {["Github", "Linkedin", "Instagram", "Youtube"].map((platform, index) => (
                     <motion.a
                       key={platform}
-                      href={platform === "Github" ? "https://github.com/rimzy2002" : "#"}
-                      target={platform === "Github" ? "_blank" : undefined}
-                      rel={platform === "Github" ? "noopener noreferrer" : undefined}
+                      href={
+                        platform === "Github" ? "https://github.com/rimzy2002" :
+                        platform === "Linkedin" ? "https://www.linkedin.com/in/mohamedrimzy09?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" :
+                        "#"
+                      }
+                      target={platform === "Github" || platform === "Linkedin" ? "_blank" : undefined}
+                      rel={platform === "Github" || platform === "Linkedin" ? "noopener noreferrer" : undefined}
                       whileHover={{ scale: 1.1, y: -2 }}
                       whileTap={{ scale: 0.95 }}
                       className="text-gray-400 hover:text-white transition-colors"
