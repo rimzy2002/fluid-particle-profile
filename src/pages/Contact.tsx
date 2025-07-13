@@ -24,8 +24,8 @@ const Contact = () => {
       await emailjs.send('service_fdzng2l', 'template_fd9q1t8', {
         from_name: formData.name,
         from_email: formData.email,
-        subject: formData.subject,
-        message: formData.message
+        from_subject: formData.subject,
+        from_message: formData.message
       }, 'fZmaz6qlzNNn19Aku');
       toast({
         title: "Message sent!",
