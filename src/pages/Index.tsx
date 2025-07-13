@@ -84,17 +84,18 @@ const Index = () => {
                   transition={{ duration: 0.6, delay: 1 }}
                   className="flex justify-center lg:justify-start space-x-6 mt-8"
                 >
-                  {["Github", "Linkedin", "Leetcode", "Youtube"].map((platform, index) => (
+                  {["Github", "Linkedin", "Leetcode", "Instagram"].map((platform, index) => (
                     <motion.a
                       key={platform}
                       href={
                         platform === "Github" ? "https://github.com/rimzy2002" :
                         platform === "Linkedin" ? "https://www.linkedin.com/in/mohamedrimzy09?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" :
                         platform === "Leetcode" ? "https://leetcode.com/u/rmmrimzi/" :
+                        platform === "Instagram" ? "https://www.instagram.com/rimzy_ry" :
                         "#"
                       }
-                      target={platform === "Github" || platform === "Linkedin" || platform === "Leetcode" ? "_blank" : undefined}
-                      rel={platform === "Github" || platform === "Linkedin" || platform === "Leetcode" ? "noopener noreferrer" : undefined}
+                      target={platform === "Github" || platform === "Linkedin" || platform === "Leetcode" || platform === "Instagram" ? "_blank" : undefined}
+                      rel={platform === "Github" || platform === "Linkedin" || platform === "Leetcode" || platform === "Instagram" ? "noopener noreferrer" : undefined}
                       whileHover={{ scale: 1.1, y: -2 }}
                       whileTap={{ scale: 0.95 }}
                       className="text-gray-400 hover:text-white transition-colors"
