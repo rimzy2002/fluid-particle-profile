@@ -8,7 +8,7 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-commerce Platform",
+      title: "Student Budget & Expense Tracker",
       description: "Modern e-commerce solution with React, Node.js, and MongoDB",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=500&h=300&fit=crop",
       tech: ["React", "Node.js", "MongoDB", "Stripe"],
