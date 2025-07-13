@@ -9,7 +9,7 @@ const Projects = () => {
     {
       id: 1,
       title: "Student Budget & Expense Tracker",
-      description: "Modern e-commerce solution with React, Node.js, and MongoDB",
+      description: "Manage student spending easily using Express backend and React frontend.",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=500&h=300&fit=crop",
       tech: ["HTML5", "CSS3", "JavaScript", "React.js", "Node.js", "Express"],
       liveUrl: "#",
