@@ -20,7 +20,7 @@ const Projects = () => {
       title: "Task Management App",
       description: "Collaborative task management with real-time updates",
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=300&fit=crop",
-      tech: ["React", "Socket.io", "Express", "PostgreSQL"],
+      tech: ["HTML5", "CSS3", "JavaScript", "React.js", "Node.js", "Express"],
       liveUrl: "#",
       githubUrl: "#"
     },
