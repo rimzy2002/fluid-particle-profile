@@ -10,7 +10,7 @@ const Projects = () => {
       id: 1,
       title: "Student Budget & Expense Tracker",
       description: "Manage student spending easily using Express backend and React frontend.",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=500&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&auto=format&q=80",
       tech: ["HTML5", "CSS3", "JavaScript", "React.js", "Node.js", "Express"],
       liveUrl: "#",
       githubUrl: "#"
@@ -19,7 +19,7 @@ const Projects = () => {
       id: 2,
       title: "Task Management App",
       description: "Collaborative task management with real-time updates",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop&auto=format&q=80",
       tech: ["HTML5", "CSS3", "JavaScript", "React.js", "Node.js", "Express"],
       liveUrl: "#",
       githubUrl: "#"
@@ -73,6 +73,8 @@ const Projects = () => {
                   <img
                     src={project.image}
                     alt={project.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
