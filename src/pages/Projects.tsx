@@ -104,7 +104,7 @@ const Projects = () => {
                       size="sm"
                       variant="outline"
                       className="border-gray-600 text-gray-300 hover:bg-gray-700 hover:text-white"
-                      onClick={() => window.open('https://drive.google.com/drive/folders/1iVu2mg7eVNNYKV48-dUfhsPifI7lNomk?usp=sharing', '_blank')}
+                      onClick={() => window.open('https://68ee4af21ccbfb4961cba359--student-budget-tracker-web.netlify.app/', '_blank')}
                     >
                       <ExternalLink size={16} className="mr-1" />
                       Live Demo
