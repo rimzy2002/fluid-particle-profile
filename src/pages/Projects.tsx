@@ -11,7 +11,7 @@ const Projects = () => {
       title: "Student Budget & Expense Tracker",
       description: "Manage student spending easily using Express backend and React frontend.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&auto=format&q=80",
-      tech: ["HTML5", "CSS3", "JavaScript", "React.js", "Node.js", "Express"],
+      tech: ["HTML5", "CSS", "JavaScript", "React.jsx"],
       liveUrl: "#",
       githubUrl: "#"
     },
