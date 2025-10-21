@@ -32,6 +32,15 @@ const Projects = () => {
       tech: ["Java Swing", "MySQL", "JDBC", "OOP"],
       liveUrl: "#",
       githubUrl: "#"
+    },
+    {
+      id: 4,
+      title: "Meditation-APP",
+      description: "Your path to mindfulness and inner peace with guided meditation, breathing exercises, and journaling features",
+      image: "/lovable-uploads/meditation-app.png",
+      tech: ["TypeScript", "CSS", "JavaScript", "HTML"],
+      liveUrl: "#",
+      githubUrl: "#"
     }
   ];
 
