@@ -39,7 +39,7 @@ const Projects = () => {
       description: "Your path to mindfulness and inner peace with guided meditation, breathing exercises, and journaling features",
       image: "/lovable-uploads/meditation-app.png",
       tech: ["TypeScript", "CSS", "JavaScript", "HTML"],
-      liveUrl: "#",
+      liveUrl: "https://mental-health-check.netlify.app/",
       githubUrl: "https://github.com/rimzy2002/Meditation-APP/tree/main"
     }
   ];
