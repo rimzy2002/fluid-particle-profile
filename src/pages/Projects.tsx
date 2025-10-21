@@ -40,7 +40,7 @@ const Projects = () => {
       image: "/lovable-uploads/meditation-app.png",
       tech: ["TypeScript", "CSS", "JavaScript", "HTML"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "https://github.com/rimzy2002/Meditation-APP/tree/main"
     }
   ];
 
@@ -113,7 +113,7 @@ const Projects = () => {
                       size="sm"
                       variant="outline"
                       className="border-gray-600 text-gray-300 hover:bg-gray-700 hover:text-white"
-                      onClick={() => window.open('https://68ee4af21ccbfb4961cba359--student-budget-tracker-web.netlify.app/', '_blank')}
+                      onClick={() => window.open(project.liveUrl, '_blank')}
                     >
                       <ExternalLink size={16} className="mr-1" />
                       Live Demo
@@ -122,7 +122,7 @@ const Projects = () => {
                       size="sm"
                       variant="outline"
                       className="border-gray-600 text-gray-300 hover:bg-gray-700 hover:text-white"
-                      onClick={() => window.open('https://github.com/rimzy2002', '_blank')}
+                      onClick={() => window.open(project.githubUrl, '_blank')}
                     >
                       <Github size={16} className="mr-1" />
                       Code
