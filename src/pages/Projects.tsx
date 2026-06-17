@@ -8,39 +8,75 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Student Budget & Expense Tracker",
-      description: "Manage student spending easily using Express backend and React frontend.",
+      title: "Smart Internship & Skill Tracker",
+      description: "A centralized career management platform with N-Tier architecture, normalized MySQL schema, Gemini API integration for resume parsing, and CI/CD pipelines via GitHub Actions.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&auto=format&q=80",
-      tech: ["HTML5", "CSS", "JavaScript", "React.jsx"],
+      tech: ["React", "Node.js", "Express", "MySQL", "Docker", "Gemini API"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "Collaborative task management with real-time updates",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop&auto=format&q=80",
-      tech: ["HTML5", "CSS3", "JavaScript", "React.js", "Node.js", "Express"],
+      title: "Student Budget & Expense Tracker",
+      description: "Manage student spending easily using Express backend and React frontend.",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop&auto=format&q=80",
+      tech: ["HTML5", "CSS", "JavaScript", "React"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
       id: 3,
-      title: "ICU Patient Monitoring System",
-      description: "Empowering ICU care with a Java-based system for real-time patient tracking, data management, and intelligent reporting",
-      image: "/lovable-uploads/cc2605f6-b905-4ded-a72d-badaab7db0ae.png",
-      tech: ["Java Swing", "MySQL", "JDBC", "OOP"],
+      title: "Task Management App",
+      description: "Collaborative task management with real-time updates and team features.",
+      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&h=250&fit=crop&auto=format&q=80",
+      tech: ["HTML5", "CSS3", "JavaScript", "React.js", "Node.js", "Express"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
       id: 4,
+      title: "ICU Smart Monitoring and Alert System",
+      description: "A healthcare monitoring system integrating hardware sensors with software interfaces for ICU patient management, with role-based access and secure patient data management.",
+      image: "/lovable-uploads/cc2605f6-b905-4ded-a72d-badaab7db0ae.png",
+      tech: ["Java Swing", "MySQL", "Hardware Sensors", "OOP"],
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      id: 5,
+      title: "KnowledgeHub Online Book Shopping Platform",
+      description: "A full-stack e-commerce platform for book purchasing with authentication, product management, shopping cart, and responsive design.",
+      image: "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=400&h=250&fit=crop&auto=format&q=80",
+      tech: ["PHP", "MySQL", "XAMPP"],
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      id: 6,
+      title: "Student Registration System",
+      description: "A CRUD-based web application for student record management with form validation and optimized user workflows.",
+      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=250&fit=crop&auto=format&q=80",
+      tech: ["PHP", "MySQL"],
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      id: 7,
       title: "Meditation-APP",
-      description: "Your path to mindfulness and inner peace with guided meditation, breathing exercises, and journaling features",
+      description: "Your path to mindfulness and inner peace with guided meditation, breathing exercises, and journaling features.",
       image: "/lovable-uploads/meditation-app.png",
       tech: ["TypeScript", "CSS", "JavaScript", "HTML"],
       liveUrl: "https://mental-health-check.netlify.app/",
       githubUrl: "https://github.com/rimzy2002/Meditation-APP/tree/main"
+    },
+    {
+      id: 8,
+      title: "Portfolio Website",
+      description: "A responsive personal portfolio website showcasing academic and software development projects, deployed on GitHub Pages.",
+      image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=400&h=250&fit=crop&auto=format&q=80",
+      tech: ["HTML", "CSS", "JavaScript"],
+      liveUrl: "#",
+      githubUrl: "#"
     }
   ];
 
@@ -68,7 +104,7 @@ const Projects = () => {
                 key={project.id}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ 
                   scale: 1.05,
                   rotateY: 5,
