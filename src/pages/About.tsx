@@ -1,78 +1,122 @@
 import { motion } from "framer-motion";
+import { GraduationCap, Briefcase, Award, BookOpen } from "lucide-react";
 import PageTransition from "@/components/PageTransition";
+
 const About = () => {
-  return <PageTransition>
+  return (
+    <PageTransition>
       <div className="relative z-10 pt-24 pb-12">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div initial={{
-          opacity: 0,
-          y: 20
-        }} animate={{
-          opacity: 1,
-          y: 0
-        }} transition={{
-          duration: 0.6
-        }} className="text-center mb-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
             <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
               About Me
             </h1>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Passionate developer crafting digital experiences with modern technologies
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Software Engineering Undergraduate — AI & Full Stack Developer
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <motion.div initial={{
-            opacity: 0,
-            x: -50
-          }} animate={{
-            opacity: 1,
-            x: 0
-          }} transition={{
-            duration: 0.8,
-            delay: 0.2
-          }}>
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 blur-3xl rounded-lg"></div>
-                <div className="relative bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700">
-                  <h2 className="text-2xl font-bold mb-4 text-white">My Journey</h2>
-                  <p className="text-gray-300 mb-4">My journey into technology began with a deep curiosity about how websites and applications work, which quickly evolved into a passion for creating engaging digital experiences that solve real-world problems and enhance everyday life.</p>
-                  <p className="text-gray-300 mb-4">As I explored different areas of tech, I found myself drawn to full-stack web development—where I could build both user interfaces and backend systems—giving me the power to bring complete web applications to life from start to finish.</p>
-                  <p className="text-gray-300">Currently, I’m pursuing a degree in Computer System Engineering while continuously sharpening my full-stack development skills through hands-on projects, online learning, and staying up to date with the latest industry tools and trends.</p>
+          {/* Professional Summary */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 mb-12"
+          >
+            <h2 className="text-2xl font-bold mb-4 text-white flex items-center gap-3">
+              <BookOpen className="text-purple-400" size={24} />
+              Professional Summary
+            </h2>
+            <p className="text-gray-300 leading-relaxed">
+              Computer Systems Engineering undergraduate with a strong foundation in Full Stack Web Development (MERN) 
+              and database architecture. Proven experience building scalable web applications, integrating APIs, and optimizing 
+              database performance. Skilled in bridging software development with hardware integrations and deploying robust, 
+              responsive user interfaces. Passionate about transitioning into AI engineering and actively seeking opportunities 
+              to leverage modern frameworks and cloud technologies to solve complex architectural challenges.
+            </p>
+          </motion.div>
+
+          {/* Education & Experience Grid */}
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Education */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700"
+            >
+              <h2 className="text-2xl font-bold mb-6 text-white flex items-center gap-3">
+                <GraduationCap className="text-cyan-400" size={24} />
+                Education
+              </h2>
+              <div className="space-y-6">
+                <div className="border-l-2 border-cyan-500/50 pl-4">
+                  <h3 className="text-lg font-semibold text-white">BSc (Hons) Computer Systems Engineering</h3>
+                  <p className="text-purple-400">NSBM Green University</p>
+                  <p className="text-gray-400 text-sm">Affiliated with Plymouth University, UK</p>
+                  <p className="text-gray-500 text-sm mt-1">2023 – 2027 | Expected Graduation: 2027</p>
                 </div>
               </div>
             </motion.div>
 
-            <motion.div initial={{
-            opacity: 0,
-            x: 50
-          }} animate={{
-            opacity: 1,
-            x: 0
-          }} transition={{
-            duration: 0.8,
-            delay: 0.4
-          }} className="space-y-6">
-              <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700">
-                <h3 className="text-xl font-semibold mb-3 text-purple-400">Experience</h3>
-                <p className="text-gray-300">Aspiring Full-Stack Developer
-Gaining hands-on experience through academic projects and self-learning. Currently exploring React, Node.js, PHP, and MySQL by building real-world mini projects.</p>
-              </div>
-
-              <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700">
-                <h3 className="text-xl font-semibold mb-3 text-cyan-400">Projects</h3>
-                <p className="text-gray-300">5 successful projects delivered</p>
-              </div>
-
-              <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700">
-                <h3 className="text-xl font-semibold mb-3 text-yellow-400">Collaboration</h3>
-                <p className="text-gray-300">Team Player with Strong Learning Spirit
-Worked on university group projects and participated in peer learning environments. Currently looking forward to contributing to open-source and internship opportunities.</p>
+            {/* Experience */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700"
+            >
+              <h2 className="text-2xl font-bold mb-6 text-white flex items-center gap-3">
+                <Briefcase className="text-purple-400" size={24} />
+                Experience
+              </h2>
+              <div className="space-y-6">
+                <div className="border-l-2 border-purple-500/50 pl-4">
+                  <h3 className="text-lg font-semibold text-white">Front-End Development Intern</h3>
+                  <p className="text-cyan-400">ILT Software (Pvt) Ltd</p>
+                  <p className="text-gray-500 text-sm mt-1">July 2025 – October 2025</p>
+                  <ul className="text-gray-300 text-sm mt-3 space-y-2 list-disc list-inside">
+                    <li>Engineered and maintained responsive web interfaces, translating UI/UX designs into functional code.</li>
+                    <li>Collaborated with senior developers to troubleshoot frontend bugs and optimize application load times.</li>
+                    <li>Managed version control and codebase tracking using Git and GitHub.</li>
+                    <li>Enforced software development best practices and strict coding standards.</li>
+                  </ul>
+                </div>
               </div>
             </motion.div>
           </div>
+
+          {/* Certifications */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700"
+          >
+            <h2 className="text-2xl font-bold mb-6 text-white flex items-center gap-3">
+              <Award className="text-yellow-400" size={24} />
+              Certifications & Professional Development
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="bg-gray-700/30 rounded-xl p-4 border border-gray-600">
+                <h3 className="text-white font-semibold">IITM-Pravartak Full Stack Development with AI Tools</h3>
+                <p className="text-gray-400 text-sm">GUVI & HCL — In Progress</p>
+              </div>
+              <div className="bg-gray-700/30 rounded-xl p-4 border border-gray-600">
+                <h3 className="text-white font-semibold">Unix Tutorial for Beginners</h3>
+                <p className="text-gray-400 text-sm">Udemy</p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
-    </PageTransition>;
+    </PageTransition>
+  );
 };
+
 export default About;

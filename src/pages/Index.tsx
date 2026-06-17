@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { ArrowDown, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,9 +7,8 @@ import { Link } from "react-router-dom";
 
 const Index = () => {
   const handleDownloadResume = () => {
-    // Create a dummy resume download
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // You would replace this with actual resume file
+    link.href = '/resume.pdf';
     link.download = 'resume.pdf';
     link.click();
   };
@@ -28,27 +26,46 @@ const Index = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="text-center lg:text-left"
               >
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                  className="text-lg text-purple-400 font-medium mb-2"
+                >
+                  Hello, I'm
+                </motion.p>
+
                 <motion.h1
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
-                  className="text-5xl lg:text-7xl font-bold mb-6"
+                  className="text-4xl lg:text-6xl font-bold mb-4"
                 >
                   <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent">
-                    Creative
+                    Refais Mohammed
                   </span>
                   <br />
-                  <span className="text-white">Developer</span>
+                  <span className="text-white">Mohammed Rimzy</span>
                 </motion.h1>
+
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                  className="text-xl text-cyan-400 font-semibold mb-4"
+                >
+                  AI & Full Stack Developer
+                </motion.p>
                 
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.6 }}
-                  className="text-xl text-gray-300 mb-8 max-w-2xl"
+                  className="text-lg text-gray-300 mb-8 max-w-2xl"
                 >
-                  I craft exceptional digital experiences with cutting-edge technology, 
-                  beautiful design, and seamless user interactions.
+                  Computer Systems Engineering undergraduate with a strong foundation in Full Stack Web Development (MERN) 
+                  and database architecture. Proven experience building scalable web applications, integrating APIs, and optimizing 
+                  database performance. Passionate about transitioning into AI engineering.
                 </motion.p>
 
                 <motion.div
@@ -94,8 +111,8 @@ const Index = () => {
                         platform === "Instagram" ? "https://www.instagram.com/rimzy_ry" :
                         "#"
                       }
-                      target={platform === "Github" || platform === "Linkedin" || platform === "Leetcode" || platform === "Instagram" ? "_blank" : undefined}
-                      rel={platform === "Github" || platform === "Linkedin" || platform === "Leetcode" || platform === "Instagram" ? "noopener noreferrer" : undefined}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       whileHover={{ scale: 1.1, y: -2 }}
                       whileTap={{ scale: 0.95 }}
                       className="text-gray-400 hover:text-white transition-colors"
