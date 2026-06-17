@@ -30,7 +30,7 @@ const Navigation = () => {
               whileHover={{ scale: 1.05 }}
               className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent"
             >
-              Portfolio
+              RMM Rimzy
             </motion.div>
 
             {/* Desktop Menu */}

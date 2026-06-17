@@ -1,39 +1,55 @@
-
 import { motion } from "framer-motion";
 import PageTransition from "@/components/PageTransition";
 
 const Skills = () => {
   const skillCategories = [
     {
+      title: "Languages",
+      skills: [
+        { name: "JavaScript", level: 85 },
+        { name: "TypeScript", level: 80 },
+        { name: "Python", level: 70 },
+        { name: "Java", level: 65 },
+        { name: "C / C++", level: 60 },
+        { name: "PHP", level: 70 }
+      ]
+    },
+    {
       title: "Frontend",
       skills: [
-        { name: "HTML", level: 90 },
-        { name: "CSS", level: 85 },
-        { name: "JavaScript", level: 80 },
-        { name: "React.js", level: 75 },
-        { name: "Redux", level: 70 },
-        { name: "Tailwind CSS", level: 80 }
+        { name: "React.js", level: 85 },
+        { name: "Next.js", level: 70 },
+        { name: "Redux", level: 75 },
+        { name: "Tailwind CSS", level: 85 },
+        { name: "Bootstrap", level: 75 },
+        { name: "HTML5 / CSS3", level: 90 }
       ]
     },
     {
       title: "Backend",
       skills: [
-        { name: "Node.js", level: 75 },
-        { name: "Express.js", level: 70 },
-        { name: "MongoDB", level: 65 },
-        { name: "Mongoose", level: 65 },
-        { name: "MySQL", level: 60 }
+        { name: "Node.js", level: 80 },
+        { name: "Express.js", level: 80 }
       ]
     },
     {
-      title: "Tools & Others",
+      title: "Databases",
       skills: [
-        { name: "Git", level: 80 },
-        { name: "GitHub", level: 80 },
-        { name: "VS Code", level: 85 },
-        { name: "Postman", level: 70 },
-        { name: "AWS", level: 55 },
-        { name: "Cursor AI", level: 85 }
+        { name: "MySQL", level: 80 },
+        { name: "MongoDB", level: 75 },
+        { name: "Firebase", level: 65 }
+      ]
+    },
+    {
+      title: "Tools, Cloud & AI",
+      skills: [
+        { name: "Git / GitHub", level: 85 },
+        { name: "Docker", level: 65 },
+        { name: "AWS", level: 60 },
+        { name: "REST APIs", level: 80 },
+        { name: "Postman", level: 80 },
+        { name: "Cursor AI", level: 85 },
+        { name: "Gemini API", level: 70 }
       ]
     }
   ];
@@ -62,7 +78,7 @@ const Skills = () => {
                 key={category.title}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: categoryIndex * 0.2 }}
+                transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
                 className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700"
               >
                 <h2 className="text-2xl font-bold mb-6 text-center bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
@@ -75,7 +91,7 @@ const Skills = () => {
                       key={skill.name}
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.6, delay: (categoryIndex * 0.2) + (skillIndex * 0.1) }}
+                      transition={{ duration: 0.6, delay: (categoryIndex * 0.1) + (skillIndex * 0.05) }}
                     >
                       <div className="flex justify-between items-center mb-2">
                         <span className="text-white font-medium">{skill.name}</span>
@@ -85,7 +101,7 @@ const Skills = () => {
                         <motion.div
                           initial={{ width: 0 }}
                           animate={{ width: `${skill.level}%` }}
-                          transition={{ duration: 1, delay: (categoryIndex * 0.2) + (skillIndex * 0.1) + 0.5 }}
+                          transition={{ duration: 1, delay: (categoryIndex * 0.1) + (skillIndex * 0.05) + 0.3 }}
                           className="bg-gradient-to-r from-purple-500 to-cyan-500 h-2 rounded-full"
                         />
                       </div>
@@ -100,7 +116,7 @@ const Skills = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
             className="mt-16 text-center"
           >
             <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
@@ -113,7 +129,7 @@ const Skills = () => {
                   href={platform === "LeetCode" ? "https://leetcode.com/u/rmmrimzi/" : "#"}
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
+                  transition={{ duration: 0.5, delay: (index * 0.1) }}
                   whileHover={{ scale: 1.05, y: -5 }}
                   className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700 hover:border-purple-500 transition-all duration-300"
                 >
