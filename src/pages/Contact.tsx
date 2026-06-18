@@ -25,8 +25,19 @@ const Contact = () => {
         from_name: formData.name,
         from_email: formData.email,
         from_subject: formData.subject,
-        from_message: formData.message
-      }, 'fZmaz6qlzNNn19Aku');
+        from_message: formData.message,
+        // Also send with common EmailJS template variable names for compatibility
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        title: formData.subject,
+        reply_to: formData.email,
+        to_email: 'rimzy2002rr@gmail.com',
+        to_name: 'Rimzy'
+      }, {
+        publicKey: 'fZmaz6qlzNNn19Aku'
+      });
       toast({
         title: "Message sent!",
         description: "Thank you for your message. I'll get back to you soon."
