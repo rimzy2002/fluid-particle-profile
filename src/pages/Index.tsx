@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 const Index = () => {
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/resume.pdf';
-    link.download = 'resume.pdf';
+    link.href = resumeAsset.url;
+    link.download = 'Rimzy_CV_SE.pdf';
     link.click();
   };
 
