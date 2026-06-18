@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download } from "lucide-react";
+import resumeAsset from "@/assets/Rimzy_CV_SE.pdf.asset.json";
 import { Button } from "@/components/ui/button";
 import PageTransition from "@/components/PageTransition";
 import ThreeScene from "@/components/ThreeScene";
