@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download } from "lucide-react";
+import resumeAsset from "@/assets/Rimzy_CV_SE.pdf.asset.json";
 import { Button } from "@/components/ui/button";
 import PageTransition from "@/components/PageTransition";
 import ThreeScene from "@/components/ThreeScene";
@@ -8,8 +9,8 @@ import { Link } from "react-router-dom";
 const Index = () => {
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/resume.pdf';
-    link.download = 'resume.pdf';
+    link.href = resumeAsset.url;
+    link.download = 'Rimzy_CV_SE.pdf';
     link.click();
   };
 
