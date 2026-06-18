@@ -56,10 +56,8 @@ const About = () => {
               </h2>
               <div className="space-y-6">
                 <div className="border-l-2 border-cyan-500/50 pl-4">
-                  <h3 className="text-lg font-semibold text-white">BSc (Hons) Computer Systems Engineering</h3>
-                  <p className="text-purple-400">NSBM Green University</p>
-                  <p className="text-gray-400 text-sm">Affiliated with Plymouth University, UK</p>
-                  <p className="text-gray-500 text-sm mt-1">2023 – 2027 | Expected Graduation: 2027</p>
+                  <h3 className="text-lg font-semibold text-white">BSc (Hons) Computer Systems Engineering | 2023 – 2027</h3>
+                  <p className="text-purple-400">NSBM Green University (UGC Approved)</p>
                 </div>
               </div>
             </motion.div>
