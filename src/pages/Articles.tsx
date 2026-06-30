@@ -113,13 +113,16 @@ const Articles = () => {
                     ))}
                   </div>
 
-                  <Button
-                    variant="ghost"
-                    className="text-purple-400 hover:text-purple-300 hover:bg-purple-400/10 p-0 h-auto font-medium group"
+                  <a
+                    href={article.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-purple-400 hover:text-purple-300 hover:bg-purple-400/10 p-0 h-auto font-medium group transition-colors rounded"
+                    onClick={(e) => e.stopPropagation()}
                   >
                     Read More
                     <ArrowRight size={16} className="ml-1 transition-transform duration-300 group-hover:translate-x-1" />
-                  </Button>
+                  </a>
                 </div>
               </motion.article>
             ))}
