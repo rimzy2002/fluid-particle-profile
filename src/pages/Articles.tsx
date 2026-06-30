@@ -13,7 +13,8 @@ const Articles = () => {
       date: "2024-01-15",
       readTime: "8 min read",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=250&fit=crop",
-      tags: ["React", "JavaScript", "Architecture"]
+      tags: ["React", "JavaScript", "Architecture"],
+      url: "https://dev-architect-one.vercel.app/"
     },
     {
       id: 2,
@@ -22,7 +23,8 @@ const Articles = () => {
       date: "2024-01-10",
       readTime: "6 min read",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=250&fit=crop",
-      tags: ["Web Development", "Technology", "Future"]
+      tags: ["Web Development", "Technology", "Future"],
+      url: "#"
     },
     {
       id: 3,
@@ -31,9 +33,16 @@ const Articles = () => {
       date: "2024-01-05",
       readTime: "10 min read",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=250&fit=crop",
-      tags: ["CSS", "Layout", "Responsive Design"]
+      tags: ["CSS", "Layout", "Responsive Design"],
+      url: "#"
     }
   ];
+
+  const handleArticleClick = (url: string) => {
+    if (url && url !== "#") {
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
+  };
 
   return (
     <PageTransition>
@@ -61,7 +70,8 @@ const Articles = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 whileHover={{ y: -5 }}
-                className="group bg-gray-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-700 hover:border-purple-500/50 transition-all duration-300"
+                onClick={() => handleArticleClick(article.url)}
+                className="group bg-gray-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-700 hover:border-purple-500/50 transition-all duration-300 cursor-pointer"
               >
                 <div className="relative overflow-hidden">
                   <img
@@ -103,13 +113,16 @@ const Articles = () => {
                     ))}
                   </div>
 
-                  <Button
-                    variant="ghost"
-                    className="text-purple-400 hover:text-purple-300 hover:bg-purple-400/10 p-0 h-auto font-medium group"
+                  <a
+                    href={article.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-purple-400 hover:text-purple-300 hover:bg-purple-400/10 p-0 h-auto font-medium group transition-colors rounded"
+                    onClick={(e) => e.stopPropagation()}
                   >
                     Read More
                     <ArrowRight size={16} className="ml-1 transition-transform duration-300 group-hover:translate-x-1" />
-                  </Button>
+                  </a>
                 </div>
               </motion.article>
             ))}
