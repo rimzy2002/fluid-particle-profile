@@ -13,7 +13,8 @@ const Articles = () => {
       date: "2024-01-15",
       readTime: "8 min read",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=250&fit=crop",
-      tags: ["React", "JavaScript", "Architecture"]
+      tags: ["React", "JavaScript", "Architecture"],
+      url: "https://dev-architect-one.vercel.app/"
     },
     {
       id: 2,
@@ -22,7 +23,8 @@ const Articles = () => {
       date: "2024-01-10",
       readTime: "6 min read",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=250&fit=crop",
-      tags: ["Web Development", "Technology", "Future"]
+      tags: ["Web Development", "Technology", "Future"],
+      url: "#"
     },
     {
       id: 3,
@@ -31,9 +33,16 @@ const Articles = () => {
       date: "2024-01-05",
       readTime: "10 min read",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=250&fit=crop",
-      tags: ["CSS", "Layout", "Responsive Design"]
+      tags: ["CSS", "Layout", "Responsive Design"],
+      url: "#"
     }
   ];
+
+  const handleArticleClick = (url: string) => {
+    if (url && url !== "#") {
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
+  };
 
   return (
     <PageTransition>
