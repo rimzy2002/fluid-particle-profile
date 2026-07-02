@@ -8,7 +8,7 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Smart Internship & Skill Tracker",
+      title: "Student-Career-and-Internship-Tracker",
       description: "A centralized career management platform with N-Tier architecture, normalized MySQL schema, Gemini API integration for resume parsing, and CI/CD pipelines via GitHub Actions.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&auto=format&q=80",
       tech: ["React", "Node.js", "Express", "MySQL", "Docker", "Gemini API"],
