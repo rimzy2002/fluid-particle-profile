@@ -110,7 +110,8 @@ const Projects = () => {
                   rotateY: 5,
                   rotateX: 5,
                 }}
-                className="group relative bg-gray-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-700 transform-gpu perspective-1000"
+                onClick={() => window.open(project.githubUrl, '_blank')}
+                className="group relative bg-gray-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-700 transform-gpu perspective-1000 cursor-pointer"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
@@ -149,7 +150,10 @@ const Projects = () => {
                       size="sm"
                       variant="outline"
                       className="border-gray-600 text-gray-300 hover:bg-gray-700 hover:text-white"
-                      onClick={() => window.open(project.liveUrl, '_blank')}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.open(project.liveUrl, '_blank');
+                      }}
                     >
                       <ExternalLink size={16} className="mr-1" />
                       Live Demo
@@ -158,7 +162,10 @@ const Projects = () => {
                       size="sm"
                       variant="outline"
                       className="border-gray-600 text-gray-300 hover:bg-gray-700 hover:text-white"
-                      onClick={() => window.open(project.githubUrl, '_blank')}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.open(project.githubUrl, '_blank');
+                      }}
                     >
                       <Github size={16} className="mr-1" />
                       Code
