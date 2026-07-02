@@ -13,7 +13,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&auto=format&q=80",
       tech: ["React", "Node.js", "Express", "MySQL", "Docker", "Gemini API"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "https://github.com/rimzy2002/Student-Career-and-Internship-Tracker.git"
     },
     {
       id: 2,
