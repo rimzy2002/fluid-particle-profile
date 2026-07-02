@@ -37,7 +37,7 @@ const Skills = () => {
       skills: [
         { name: "MySQL", level: 80 },
         { name: "MongoDB", level: 75 },
-        { name: "Firebase", level: 65 }
+        { name: "Firebase", level: 70 }
       ]
     },
     {
