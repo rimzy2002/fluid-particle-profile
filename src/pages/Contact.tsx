@@ -6,7 +6,9 @@ import PageTransition from "@/components/PageTransition";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useToast } from "@/hooks/use-toast";
+import { useScrollNavigation } from "@/hooks/useScrollNavigation";
 const Contact = () => {
+  useScrollNavigation("/articles", null);
   const {
     toast
   } = useToast();

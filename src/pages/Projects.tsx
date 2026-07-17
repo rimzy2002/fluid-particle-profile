@@ -4,9 +4,11 @@ import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import PageTransition from "@/components/PageTransition";
 import careerTrackImage from "@/assets/career-track-landing.png.asset.json";
+import { useScrollNavigation } from "@/hooks/useScrollNavigation";
 
 
 const Projects = () => {
+  useScrollNavigation("/about", "/skills");
   const projects = [
     {
       id: 1,
