@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download } from "lucide-react";
-import { useEffect, useRef } from "react";
 import resumeAsset from "@/assets/Mohamed_Rimzy_CV.pdf.asset.json";
+import { useScrollNavigation } from "@/hooks/useScrollNavigation";
 import { Button } from "@/components/ui/button";
 import PageTransition from "@/components/PageTransition";
 import ThreeScene from "@/components/ThreeScene";
