@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import PageTransition from "@/components/PageTransition";
+import { useScrollNavigation } from "@/hooks/useScrollNavigation";
 
 const Articles = () => {
+  useScrollNavigation("/skills", "/contact");
   const articles = [
     {
       id: 1,
