@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import PageTransition from "@/components/PageTransition";
+import { useScrollNavigation } from "@/hooks/useScrollNavigation";
 
 const Skills = () => {
+  useScrollNavigation("/projects", "/articles");
   const skillCategories = [
     {
       title: "Languages",
