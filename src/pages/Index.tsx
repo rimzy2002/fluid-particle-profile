@@ -64,9 +64,7 @@ const Index = () => {
                   transition={{ duration: 0.6, delay: 0.6 }}
                   className="text-lg text-gray-300 mb-8 max-w-2xl"
                 >
-                  Computer Systems Engineering undergraduate with a strong foundation in Full Stack Web Development (MERN) 
-                  and database architecture. Proven experience building scalable web applications, integrating APIs, and optimizing 
-                  database performance. Passionate about transitioning into AI engineering.
+                  Computer Systems Engineering undergraduate building scalable MERN web applications. Focused on API integration, database architecture, and applying full-stack engineering principles to machine learning and AI deployment.
                 </motion.p>
 
                 <motion.div
