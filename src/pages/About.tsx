@@ -1,78 +1,11 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Briefcase, Award, BookOpen } from "lucide-react";
-import { useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
 import PageTransition from "@/components/PageTransition";
+import { useScrollNavigation } from "@/hooks/useScrollNavigation";
 
 const About = () => {
-  const navigate = useNavigate();
-  const navigatingRef = useRef(false);
-  const atBottomSinceRef = useRef<number | null>(null);
-  const touchStartYRef = useRef<number | null>(null);
+  useScrollNavigation("/", "/projects");
 
-  useEffect(() => {
-    const isAtBottom = () => {
-      const scrollY = window.scrollY || window.pageYOffset;
-      const viewport = window.innerHeight;
-      const full = document.documentElement.scrollHeight;
-      return scrollY + viewport >= full - 4;
-    };
-
-    const goToProjects = () => {
-      if (navigatingRef.current) return;
-      navigatingRef.current = true;
-      navigate("/projects");
-    };
-
-    const onWheel = (e: WheelEvent) => {
-      if (e.deltaY <= 0) {
-        atBottomSinceRef.current = null;
-        return;
-      }
-      if (!isAtBottom()) {
-        atBottomSinceRef.current = null;
-        return;
-      }
-      const now = Date.now();
-      if (atBottomSinceRef.current === null) {
-        atBottomSinceRef.current = now;
-        return;
-      }
-      // Require a continuous downward intent after hitting bottom
-      if (now - atBottomSinceRef.current > 120) {
-        goToProjects();
-      }
-    };
-
-    const onTouchStart = (e: TouchEvent) => {
-      touchStartYRef.current = e.touches[0]?.clientY ?? null;
-    };
-
-    const onTouchMove = (e: TouchEvent) => {
-      if (touchStartYRef.current === null) return;
-      const currentY = e.touches[0]?.clientY ?? 0;
-      const deltaY = touchStartYRef.current - currentY; // >0 => swipe up (scroll down)
-      if (deltaY > 60 && isAtBottom()) {
-        goToProjects();
-      }
-    };
-
-    const onTouchEnd = () => {
-      touchStartYRef.current = null;
-    };
-
-    window.addEventListener("wheel", onWheel, { passive: true });
-    window.addEventListener("touchstart", onTouchStart, { passive: true });
-    window.addEventListener("touchmove", onTouchMove, { passive: true });
-    window.addEventListener("touchend", onTouchEnd);
-
-    return () => {
-      window.removeEventListener("wheel", onWheel);
-      window.removeEventListener("touchstart", onTouchStart);
-      window.removeEventListener("touchmove", onTouchMove);
-      window.removeEventListener("touchend", onTouchEnd);
-    };
-  }, [navigate]);
 
   return (
     <PageTransition>
