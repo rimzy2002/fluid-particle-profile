@@ -5,7 +5,7 @@ import { useScrollNavigation } from "@/hooks/useScrollNavigation";
 import { Button } from "@/components/ui/button";
 import PageTransition from "@/components/PageTransition";
 import ThreeScene from "@/components/ThreeScene";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   useScrollNavigation(null, "/about");
