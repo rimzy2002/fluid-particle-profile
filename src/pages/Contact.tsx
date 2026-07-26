@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import PageTransition from "@/components/PageTransition";
@@ -195,6 +195,18 @@ const Contact = () => {
                     <p className="text-gray-300">Colombo, Sri Lanka</p>
                   </div>
                 </motion.div>
+
+                <motion.a href="https://linkedin.com/in/mohamedrimzy09" target="_blank" rel="noopener noreferrer" whileHover={{
+                x: 5
+              }} className="flex items-center space-x-4 p-4 bg-gray-800/30 rounded-lg border border-gray-700 hover:bg-gray-800/50 transition-colors">
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center">
+                    <Linkedin className="text-blue-400" size={20} />
+                  </div>
+                  <div>
+                    <h3 className="text-white font-medium">LinkedIn</h3>
+                    <p className="text-gray-300">linkedin.com/in/mohamedrimzy09</p>
+                  </div>
+                </motion.a>
               </div>
 
               {/* Social Links */}
