@@ -160,9 +160,9 @@ const Contact = () => {
               </div>
 
               <div className="space-y-6">
-                <motion.div whileHover={{
+                <motion.a href="mailto:rimzy2002rr@gmail.com" whileHover={{
                 x: 5
-              }} className="flex items-center space-x-4 p-4 bg-gray-800/30 rounded-lg border border-gray-700">
+              }} className="flex items-center space-x-4 p-4 bg-gray-800/30 rounded-lg border border-gray-700 hover:bg-gray-800/50 transition-colors cursor-pointer">
                   <div className="flex-shrink-0 w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
                     <Mail className="text-purple-400" size={20} />
                   </div>
@@ -170,7 +170,7 @@ const Contact = () => {
                     <h3 className="text-white font-medium">Email</h3>
                     <p className="text-gray-300">rimzy2002rr@gmail.com</p>
                   </div>
-                </motion.div>
+                </motion.a>
 
                 <motion.div whileHover={{
                 x: 5
