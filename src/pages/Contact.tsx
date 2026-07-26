@@ -192,7 +192,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-white font-medium">Location</h3>
-                    <p className="text-gray-300">Ampara, Sri Lanka</p>
+                    <p className="text-gray-300">Colombo, Sri Lanka</p>
                   </div>
                 </motion.div>
               </div>
