@@ -1,6 +1,6 @@
 import { useMemo, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Points, PointMaterial, Icosahedron, Torus, Octahedron } from "@react-three/drei";
+import { Points, PointMaterial } from "@react-three/drei";
 import * as THREE from "three";
 
 const Starfield = () => {
@@ -74,24 +74,20 @@ const FloatingShape = ({
     />
   );
 
-  if (kind === "torus") {
-    return (
-      <Torus ref={ref} args={[1, 0.32, 16, 60]} position={position} scale={scale}>
-        {material}
-      </Torus>
+  const geometry =
+    kind === "torus" ? (
+      <torusGeometry args={[1, 0.32, 16, 60]} />
+    ) : kind === "octa" ? (
+      <octahedronGeometry args={[1, 0]} />
+    ) : (
+      <icosahedronGeometry args={[1, 0]} />
     );
-  }
-  if (kind === "octa") {
-    return (
-      <Octahedron ref={ref} args={[1, 0]} position={position} scale={scale}>
-        {material}
-      </Octahedron>
-    );
-  }
+
   return (
-    <Icosahedron ref={ref} args={[1, 0]} position={position} scale={scale}>
+    <mesh ref={ref} position={position} scale={scale}>
+      {geometry}
       {material}
-    </Icosahedron>
+    </mesh>
   );
 };
 
