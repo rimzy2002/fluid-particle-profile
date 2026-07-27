@@ -64,14 +64,7 @@ const FloatingShape = ({
   });
 
   const material = (
-    <meshStandardMaterial
-      color={color}
-      wireframe
-      transparent
-      opacity={0.35}
-      metalness={0.6}
-      roughness={0.25}
-    />
+    <meshBasicMaterial color={color} wireframe transparent opacity={0.55} />
   );
 
   const geometry =
@@ -115,16 +108,15 @@ const ThreeBackground = () => {
 
         <Starfield />
 
-        <FloatingShape position={[-4.5, 1.5, -2]} color="#8B5CF6" speed={0.5} scale={1.1} kind="ico" />
-        <FloatingShape position={[4.6, -1.2, -3]} color="#06B6D4" speed={0.35} scale={1.3} kind="torus" />
-        <FloatingShape position={[2.6, 2.6, -4]} color="#F472B6" speed={0.45} scale={0.9} kind="octa" />
-        <FloatingShape position={[-3.2, -2.4, -3.5]} color="#22D3EE" speed={0.3} scale={1.0} kind="ico" />
-        <FloatingShape position={[0, -3.4, -5]} color="#A855F7" speed={0.4} scale={1.2} kind="octa" />
+        <FloatingShape position={[-4.5, 1.5, -2]} color="#8B5CF6" speed={0.5} scale={1.5} kind="ico" />
+        <FloatingShape position={[4.6, -1.2, -3]} color="#06B6D4" speed={0.35} scale={1.6} kind="torus" />
+        <FloatingShape position={[2.6, 2.6, -4]} color="#F472B6" speed={0.45} scale={1.5} kind="octa" />
+        <FloatingShape position={[-3.2, -2.4, -3.5]} color="#22D3EE" speed={0.3} scale={1.4} kind="ico" />
+        <FloatingShape position={[0, -3.4, -5]} color="#A855F7" speed={0.4} scale={1.5} kind="octa" />
 
-        <fog attach="fog" args={["#0b1020", 8, 22]} />
         <Rig />
       </Canvas>
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-900/40 via-gray-900/20 to-gray-900/70" />
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-900/30 via-transparent to-gray-900/60" />
     </div>
   );
 };
