@@ -1,7 +1,7 @@
 
 import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, Float, Text3D, Center } from "@react-three/drei";
+import { OrbitControls, Float } from "@react-three/drei";
 import { Mesh } from "three";
 
 const FloatingIcon = ({ position, color }: { position: [number, number, number]; color: string }) => {
