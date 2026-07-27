@@ -13,7 +13,7 @@ import Articles from "./pages/Articles";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Navigation from "./components/Navigation";
-import ParticleBackground from "./components/ParticleBackground";
+import ThreeBackground from "./components/ThreeBackground";
 
 const queryClient = new QueryClient();
 
@@ -42,7 +42,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <div className="relative min-h-screen bg-gray-900 text-white overflow-hidden">
-          <ParticleBackground />
+          <ThreeBackground />
           <Navigation />
           <AnimatedRoutes />
         </div>
