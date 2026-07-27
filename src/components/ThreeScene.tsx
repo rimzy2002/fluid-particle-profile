@@ -1,7 +1,7 @@
 
 import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, Float, Text3D, Center } from "@react-three/drei";
+import { OrbitControls, Float } from "@react-three/drei";
 import { Mesh } from "three";
 
 const FloatingIcon = ({ position, color }: { position: [number, number, number]; color: string }) => {
@@ -37,17 +37,9 @@ const ThreeScene = () => {
         <FloatingIcon position={[0, 1, -2]} color="#F59E0B" />
         <FloatingIcon position={[-2, -2, 1]} color="#EF4444" />
         
-        <Center>
-          <Text3D
-            font="/fonts/helvetiker_regular.typeface.json"
-            size={0.8}
-            height={0.1}
-            position={[0, 0, 0]}
-          >
-            Welcome
-            <meshStandardMaterial color="#ffffff" metalness={0.1} roughness={0.3} />
-          </Text3D>
-        </Center>
+        <FloatingIcon position={[2, 2.2, -1]} color="#22D3EE" />
+
+
         
         <OrbitControls enableZoom={false} enablePan={false} />
       </Canvas>
