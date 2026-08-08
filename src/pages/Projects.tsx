@@ -114,7 +114,7 @@ const Projects = () => {
                   rotateY: 5,
                   rotateX: 5,
                 }}
-                onClick={() => window.open(project.githubUrl, '_blank')}
+                onClick={() => window.open(project.liveUrl, '_blank')}
                 className="group relative bg-gray-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-700 transform-gpu perspective-1000 cursor-pointer"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
