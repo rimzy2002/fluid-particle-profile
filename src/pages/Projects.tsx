@@ -16,7 +16,7 @@ const Projects = () => {
       description: "A centralized career management platform with N-Tier architecture, normalized MySQL schema, Gemini API integration for resume parsing, and CI/CD pipelines via GitHub Actions.",
       image: careerTrackImage.url,
       tech: ["React", "Node.js", "Express", "MySQL", "Docker", "Gemini API"],
-      liveUrl: "#",
+      liveUrl: "https://student-career-and-internship-track-mu.vercel.app/",
       githubUrl: "https://github.com/rimzy2002/Student-Career-and-Internship-Tracker.git"
     },
     {
