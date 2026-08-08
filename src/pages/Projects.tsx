@@ -16,7 +16,7 @@ const Projects = () => {
       description: "A centralized career management platform with N-Tier architecture, normalized MySQL schema, Gemini API integration for resume parsing, and CI/CD pipelines via GitHub Actions.",
       image: careerTrackImage.url,
       tech: ["React", "Node.js", "Express", "MySQL", "Docker", "Gemini API"],
-      liveUrl: "#",
+      liveUrl: "https://student-career-and-internship-track-mu.vercel.app/",
       githubUrl: "https://github.com/rimzy2002/Student-Career-and-Internship-Tracker.git"
     },
     {
@@ -114,7 +114,7 @@ const Projects = () => {
                   rotateY: 5,
                   rotateX: 5,
                 }}
-                onClick={() => window.open(project.githubUrl, '_blank')}
+                onClick={() => window.open(project.liveUrl, '_blank')}
                 className="group relative bg-gray-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-700 transform-gpu perspective-1000 cursor-pointer"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
