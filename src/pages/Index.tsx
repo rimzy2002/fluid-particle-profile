@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download } from "lucide-react";
-import resumeAsset from "@/assets/Mohamed_Rimzy_CV.pdf.asset.json";
+import resumeAsset from "@/assets/RMM_Rimzy_Full_Stack_Developer.pdf.asset.json";
 import { useScrollNavigation } from "@/hooks/useScrollNavigation";
 import { Button } from "@/components/ui/button";
 import PageTransition from "@/components/PageTransition";
@@ -13,7 +13,7 @@ const Index = () => {
   const handleDownloadResume = () => {
     const link = document.createElement('a');
     link.href = resumeAsset.url;
-    link.download = 'Mohamed_Rimzy_CV.pdf';
+    link.download = 'RMM_Rimzy_Full_Stack_Developer.pdf';
     link.click();
   };
 
