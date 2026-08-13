@@ -24,6 +24,8 @@ const Skills = () => {
         { name: "Redux", level: 75 },
         { name: "Tailwind CSS", level: 85 },
         { name: "Bootstrap", level: 75 },
+        { name: "Ant Design", level: 75 },
+        { name: "Storybook", level: 70 },
         { name: "HTML5 / CSS3", level: 90 }
       ]
     },
