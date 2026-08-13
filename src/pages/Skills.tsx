@@ -24,6 +24,8 @@ const Skills = () => {
         { name: "Redux", level: 75 },
         { name: "Tailwind CSS", level: 85 },
         { name: "Bootstrap", level: 75 },
+        { name: "Ant Design", level: 75 },
+        { name: "Storybook", level: 70 },
         { name: "HTML5 / CSS3", level: 90 }
       ]
     },
@@ -31,7 +33,8 @@ const Skills = () => {
       title: "Backend",
       skills: [
         { name: "Node.js", level: 80 },
-        { name: "Express.js", level: 80 }
+        { name: "Express.js", level: 80 },
+        { name: "Zod", level: 80 }
       ]
     },
     {
@@ -39,7 +42,8 @@ const Skills = () => {
       skills: [
         { name: "MySQL", level: 80 },
         { name: "MongoDB", level: 75 },
-        { name: "Firebase", level: 70 }
+        { name: "Firebase", level: 70 },
+        { name: "Redis", level: 70 }
       ]
     },
     {
@@ -48,8 +52,12 @@ const Skills = () => {
         { name: "Git / GitHub", level: 90 },
         { name: "Docker", level: 65 },
         { name: "AWS", level: 60 },
+        { name: "GCP", level: 65 },
         { name: "REST APIs", level: 80 },
         { name: "Postman", level: 80 },
+        { name: "Jest", level: 75 },
+        { name: "Playwright", level: 75 },
+        { name: "BullMQ", level: 70 },
         { name: "Cursor AI", level: 85 },
         { name: "Gemini API", level: 70 }
       ]
