@@ -81,6 +81,15 @@ const Projects = () => {
       tech: ["HTML", "CSS", "JavaScript"],
       liveUrl: "#",
       githubUrl: "#"
+    },
+    {
+      id: 9,
+      title: "New Project — Coming Soon",
+      description: "A new project is on the way. Details, links and a preview will be added here soon.",
+      image: "/placeholder.svg",
+      tech: ["Coming Soon"],
+      liveUrl: "#",
+      githubUrl: "#"
     }
   ];
 
